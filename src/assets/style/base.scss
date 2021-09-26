@@ -1,0 +1,28 @@
+*:not(input):not(textarea) {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    // Hide scroll bar
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+@for $i from 1 through 20 {
+    .ml-#{$i} {
+        margin-left: #{$i}px;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}px;
+    }
+}
+@for $i from 11 through 36 {
+    .fs-#{$i} {
+        font-size: #{$i}px;
+    }
+    .lh-#{$i} {
+        line-height: #{$i}px;
+    }
+}
